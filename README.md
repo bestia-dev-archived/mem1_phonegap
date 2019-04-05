@@ -4,7 +4,7 @@ Trying phonegap with Wasm with the game mem1 written in Rust Webassembly with Vi
 On Win10 the development version is served from PhoneGap Desktop.  
 Running the app in Chrome browser works fine.  
   
-But running it on my android 6.0.1 (Galaxy Note 4) with PhoneGap Developer app does NOT work. 
+But running it on my android 6.0.1 (Galaxy Note 4) with PhoneGap Developer app does NOT work.  
 I cannot try this the same way on iPhone, because Apple does not allow the PhoneGap Developer app.  
   
 The index.html content is rendered well until it comes to the javascript for Wasm.  
