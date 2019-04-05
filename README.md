@@ -34,7 +34,7 @@ I added two lines of text in index.html to see where the problem starts.
 6. On the bottom of PhoneGap Desktop click the URL of the running server.  
 It will open the app in the browser.  
 The application works as intended.  
-![snap01](https://user-images.githubusercontent.com/31509965/55611398-94de4a00-57af-11e9-9e75-0b00266d6270.JPG){:height="50%" width="50%"}
+![snap01](https://user-images.githubusercontent.com/31509965/55611398-94de4a00-57af-11e9-9e75-0b00266d6270.JPG&s=200)
 
 # Running the code on Android - development mode
 7. Start the PhoneGap Developer app  
@@ -42,7 +42,7 @@ The application works as intended.
 It will open the app, but it will NOT work correctly.  
 It will render index.html till the point where is the Wasm script.  
 Then it stops.  
-![snap01](https://user-images.githubusercontent.com/31509965/55611886-108cc680-57b1-11e9-8787-a6075731315d.png){:height="50%" width="50%"}  
+![snap01](https://user-images.githubusercontent.com/31509965/55613086-002a1b00-57b4-11e9-9655-325861f8d921.png)
 
 
 #Programming References
