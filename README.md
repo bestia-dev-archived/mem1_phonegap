@@ -53,7 +53,7 @@ I added two lines of text in index.html to see where the problem starts.
 ```
 phonegap serve
 ```
-
+This will also prepare the platforms and plugin and modules folder and download all it needs.
 # Running the code on Win10 in the browser
 6. Open the browser with the URL the command have printed. Something like 192.168.0.14:3000 
 It will open the app in the browser. The application works as intended.  
