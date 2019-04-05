@@ -3,10 +3,12 @@ Things are changing fast. This is the situation on 2019-04-04.
 Trying phonegap with Wasm with the game mem1 written in Rust Webassembly with Virtual Dom.  
 On Win10 the development version is served from PhoneGap Desktop.  
 Running the app in Chrome browser works fine.  
-But running it on my android 6.0.1 (Galaxy Note 4) with PhoneGap Developer app does NOT work.  
+  
+But running it on my android 6.0.1 (Galaxy Note 4) with PhoneGap Developer app does NOT work. 
+I cannot try this the same way on iPhone, because Apple does not allow the PhoneGap Developer app.  
+  
 The index.html content is rendered well until it comes to the javascript for Wasm.  
 I don't know why. Maybe phonegap is very strict with folder names ?!?  
-Cannot try it this way on iPhone, because Apple does not allow the PhoneGap Developer app.  
 
 The source code of the original app is here:  
 https://github.com/LucianoBestia/mem1   
