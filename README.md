@@ -68,13 +68,20 @@ Original error:
 Expected 'application/wasm'.
 ```
 
-# Running the code on Android - development mode
+# Running the code on Android - development client
 7. Start the PhoneGap Developer app  
 8. Type in the URL of the command phonegap serve. Cannot use localhost, because, the android and server are on different IP. 
 It will open the app, but it will NOT work correctly.  
 It will render index.html till the point where is the Wasm script.  
 Then it stops.  
 ![snap01](https://user-images.githubusercontent.com/31509965/55613086-002a1b00-57b4-11e9-9655-325861f8d921.png)
+
+In the phonegap server there is this warning:
+```
+[phonegap] [console.warn] Content Security Policy has been added: <meta http-equiv="Content-Security-Policy" 
+content="default-src * gap: ws: https://ssl.gstatic.com;img-src * 'self' data: content:;style-src 'self' 
+'unsafe-inline' data: blob:;script-src * 'unsafe-inline' 'unsafe-eval' data: blob:;">
+```
 
 # Programming References
 https://phonegap.com/  
