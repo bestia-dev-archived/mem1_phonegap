@@ -13,7 +13,7 @@ I don't know why.
 The source code of the original app is here:  
 https://github.com/LucianoBestia/mem1   
 
-# How to install phonegap for development
+## How to install phonegap for development
 Requirements : npm must be installed on Win10. It comes with the installation of nodejs at https://nodejs.org/en/.
 It installs also the "node.js command prompt". You can find it in Start.  
 1. Win10 : in the "node.js command prompt" run
@@ -22,7 +22,7 @@ npm install -g phonegap@latest
 ``` 
 2. Android : install PhoneGap Developer app from Google Play Store
 
-# Cloning the code
+## Cloning the code
 3. Clone this repository. It will create a new folder. 
 ```
 git clone https://github.com/LucianoBestia/mem1_phonegap
@@ -48,14 +48,14 @@ I added two lines of text in index.html to see where the problem starts.
 </body>
 ```
 
-# Running on Win10 - development server
+## Running on Win10 - development server
 5. Start the development server: in "node-js command promt". Run inside the project folder:
 ```
 phonegap serve
 ```
 This will also prepare the platforms and plugin and modules folder and download all it needs.
 
-# Running on Win10 - in the browser
+## Running on Win10 - in the browser
 6. Open the browser with the URL the command have printed. Something like 192.168.0.14:3000 
 It will open the app in the browser. The application works as intended.  
 ![snap01](https://user-images.githubusercontent.com/31509965/55613230-61ea8500-57b4-11e9-99b7-36125b15c520.JPG)
@@ -69,7 +69,7 @@ Original error:
 Expected 'application/wasm'.
 ```
 
-# Running on Android - PhoneGap Development app
+## Running on Android - PhoneGap Development app
 7. Start the PhoneGap Developer app  
 8. Type in the URL of the command phonegap serve. Cannot use localhost, because, the android and server are on different IP. 
 It will open the app, but it will NOT work correctly.  
@@ -84,7 +84,16 @@ content="default-src * gap: ws: https://ssl.gstatic.com;img-src * 'self' data: c
 'unsafe-inline' data: blob:;script-src * 'unsafe-inline' 'unsafe-eval' data: blob:;">
 ```
 
-# Programming References
+## Creating package APK for Android
+9. Open https://build.phonegap.com/apps and Sign Up or Sign In.
+10. I choose open source and paste my github link https://github.com/LucianoBestia/mem1_phonegap and choose master branch.  
+There is also the possibility of sending the code as one ZIP file.  
+11. I clicked "Ready to build" or Rebuild. If the code is changed in Github, there is a button Update Code.
+12. In the right upper corner there is a QR for downloading the APK. When open the APK file it will try to install it. Android must have enabled installing from Unknown Sources.
+
+The app works the same as with the PhoneGap Development app. It does not start the Wasm code.
+
+## Programming References
 https://phonegap.com/  
 https://www.formget.com/phonegap-build/  
 
