@@ -23,7 +23,7 @@ npm install -g phonegap@latest
 2. Android : install PhoneGap Developer app from Google Play Store
 
 # Cloning the code
-3. Clone this repository. It will create a ne folder. 
+3. Clone this repository. It will create a new folder. 
 ```
 git clone https://github.com/LucianoBestia/mem1_phonegap
 ```
@@ -38,12 +38,13 @@ I had to change the background color to better see the problems.
 I added two lines of text in index.html to see where the problem starts.  
 ```html
 <body>
-<h1>malo po malo</h1>
-<h2>malo po malo</h2>
+<h1>first line</h1>
+<h2>second line</h2>
 <script src="pkg/mem1.js"></script>
   <script>
     wasm_bindgen("pkg/mem1_bg.wasm");
   </script>
+  <h2>third line</h2>
 </body>
 ```
 
