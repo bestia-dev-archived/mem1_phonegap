@@ -74,7 +74,7 @@ Expected 'application/wasm'.
 It will open the app, but it will NOT work correctly.  
 It will render index.html till the point where is the Wasm script.  
 Then it stops.  
-![snap01](https://user-images.githubusercontent.com/31509965/55613086-002a1b00-57b4-11e9-9655-325861f8d921.png)
+![snap01](https://user-images.githubusercontent.com/31509965/55621810-b8fa5500-57c8-11e9-8184-41bd3c934346.png)
 
 In the phonegap server there is this warning:
 ```
