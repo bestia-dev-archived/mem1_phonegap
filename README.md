@@ -34,7 +34,7 @@ I added two lines of text in index.html to see where the problem starts.
 6. On the bottom of PhoneGap Desktop click the URL of the running server.  
 It will open the app in the browser.  
 The application works as intended.  
-![snap01](https://user-images.githubusercontent.com/31509965/55611398-94de4a00-57af-11e9-9e75-0b00266d6270.JPG&s=200)
+![snap01](https://user-images.githubusercontent.com/31509965/55613230-61ea8500-57b4-11e9-99b7-36125b15c520.JPG)
 
 # Running the code on Android - development mode
 7. Start the PhoneGap Developer app  
