@@ -48,23 +48,40 @@ I added two lines of text in index.html to see where the problem starts.
 </body>
 ```
 
-# Running the code on Win10 - development mode
+# Running the code on Win10 - development server
 5. Start the development server: in "node-js command promt". Run inside the project folder:
 ```
 phonegap serve
 ```
+
+# Running the code on Win10 in the browser
 6. Open the browser with the URL the command have printed. Something like 192.168.0.14:3000 
-It will open the app in the browser.  
-The application works as intended.  
+It will open the app in the browser. The application works as intended.  
 ![snap01](https://user-images.githubusercontent.com/31509965/55613230-61ea8500-57b4-11e9-99b7-36125b15c520.JPG)
 
-# Running the code on Android - development mode
+In the phonegap server there is a warning, but it still works well:
+```
+[phonegap] [console.warn] `WebAssembly.instantiateStreaming` failed. Assuming this is because your server does 
+not serve wasm with `application/wasm` MIME type. Falling back to `WebAssembly.instantiate` which is slower. 
+Original error:
+[phonegap]  TypeError: Failed to execute 'compile' on 'WebAssembly': Incorrect response MIME type. 
+Expected 'application/wasm'.
+```
+
+# Running the code on Android - development client
 7. Start the PhoneGap Developer app  
 8. Type in the URL of the command phonegap serve. Cannot use localhost, because, the android and server are on different IP. 
 It will open the app, but it will NOT work correctly.  
 It will render index.html till the point where is the Wasm script.  
 Then it stops.  
 ![snap01](https://user-images.githubusercontent.com/31509965/55613086-002a1b00-57b4-11e9-9655-325861f8d921.png)
+
+In the phonegap server there is this warning:
+```
+[phonegap] [console.warn] Content Security Policy has been added: <meta http-equiv="Content-Security-Policy" 
+content="default-src * gap: ws: https://ssl.gstatic.com;img-src * 'self' data: content:;style-src 'self' 
+'unsafe-inline' data: blob:;script-src * 'unsafe-inline' 'unsafe-eval' data: blob:;">
+```
 
 # Programming References
 https://phonegap.com/  
