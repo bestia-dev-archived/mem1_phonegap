@@ -13,7 +13,7 @@ I don't know why. Maybe phonegap is very strict with folder names ?!?
 The source code of the original app is here:  
 https://github.com/LucianoBestia/mem1   
 
-# How to install phonegap on Win10
+# How to install phonegap for development
 1. Win10 : Go to https://phonegap.com/getstarted/ and download and start the installer for PhoneGap Desktop.  
 2. Android : install PhoneGap Developer app  
 
