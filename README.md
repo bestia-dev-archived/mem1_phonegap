@@ -14,8 +14,7 @@ The source code of the original app is here:
 https://github.com/LucianoBestia/mem1   
 
 # How to install phonegap for development
-Requirements : npm must be installed on Win10.   
-It comes with the installation of nodejs at https://nodejs.org/en/.
+Requirements : npm must be installed on Win10. It comes with the installation of nodejs at https://nodejs.org/en/.
 It installs also the "node.js command prompt". You can find it in Start.  
 1. Win10 : in the "node.js command prompt" run
 ```
