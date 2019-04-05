@@ -48,15 +48,21 @@ I added two lines of text in index.html to see where the problem starts.
 </body>
 ```
 
-# Running the code on Win10 - development mode
+# Running the code on Win10 - development server
 5. Start the development server: in "node-js command promt". Run inside the project folder:
 ```
 phonegap serve
 ```
+
+# Running the code on Win10 in the browser
 6. Open the browser with the URL the command have printed. Something like 192.168.0.14:3000 
 It will open the app in the browser.  
 The application works as intended.  
 ![snap01](https://user-images.githubusercontent.com/31509965/55613230-61ea8500-57b4-11e9-99b7-36125b15c520.JPG)
+
+In the phonegap server there is a warning, but it still works well:
+[phonegap] [console.warn] `WebAssembly.instantiateStreaming` failed. Assuming this is because your server does not serve wasm with `application/wasm` MIME type. Falling back to `WebAssembly.instantiate` which is slower. Original error:
+[phonegap]  TypeError: Failed to execute 'compile' on 'WebAssembly': Incorrect response MIME type. Expected 'application/wasm'.
 
 # Running the code on Android - development mode
 7. Start the PhoneGap Developer app  
