@@ -27,14 +27,16 @@ Inside the www folder I added the folders: www/pkg and www/content
 and the files www/index.html and www/css/mem1.css.  
 I had to change the background color to better see the problems.  
 I added two lines of text in index.html to see where the problem starts.  
-`<body>
+```html
+<body>
 <h1>malo po malo</h1>
 <h2>malo po malo</h2>
 <script src="pkg/mem1.js"></script>
   <script>
     wasm_bindgen("pkg/mem1_bg.wasm");
   </script>
-</body>`
+</body>
+```
 
 # Running the code on Win10 - development mode
 4. Start PhoneGap Desktop, click the Plus button and open existing PhoneGap project.
