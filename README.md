@@ -71,21 +71,12 @@ It will open the PhoneGap app.
 10. I choose open source and paste my github link https://github.com/LucianoBestia/mem1_phonegap and choose master branch.  
 There is also the possibility of sending the code as one ZIP file.  
 11. I clicked "Ready to build" or Rebuild. If the code is changed in Github, there is a button Update Code.
-12. In the right upper corner there is a QR code wnloading the APK.  
-When open the APK file it will try to install it.  
-Android must have enabled installing from Unknown Sources.
-
-The app works the same as with the PhoneGap Development app. It does not start the Wasm code.
-
-2019-04-06
-I think the problem is Browsers don't allow file:// URLs with ajax calls (for security reasons).
-And wasm is loaded as ajax call. So I have to put a static file server inside Cordova. Let's try.
+12. In the right upper corner there is a QR code to downloadi the APK to the android device.  
+When Chrome downloads the APK you can then open it. It will ask you for install and standard security questions.  
+Android must have enabled installing from Unknown Sources. It can be enabled just for this install only.
 
 ## Programming References
 https://phonegap.com/  
 https://www.formget.com/phonegap-build/  
 https://cordova.apache.org/
-
-
-
 
