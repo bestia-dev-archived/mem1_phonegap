@@ -74,7 +74,7 @@ There is also the possibility for sending the code as one single ZIP file.
 12. In the right upper corner there is a QR code to downloadi the APK to the android device.  
 When Chrome for Android downloads the APK you can then open it. It will ask you for install and standard security questions.  
 Android must have enabled installing from Unknown Sources. Usually it can be enabled just for this install only.  
-On Android find mem1_phonegap in you programs list and run it.  
+13. On Android find mem1_phonegap in you programs list and run it.  
   
 My build can be found here:  
 https://build.phonegap.com/apps/3526520/share   
