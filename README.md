@@ -3,7 +3,9 @@ Things are changing fast. This is the situation on 2019-04-06.
 Trying PhoneGap with Wasm with the game mem1 written in Rust Webassembly with Virtual Dom.  
 PhoneGap is just a distribution of Cordova. It has the exact same "engine". Just the tooling is somehow different.  
 On Win10 the development version is served from PhoneGap CLI with `phonegap serve`.  
-Running the app in Win10 in Chrome browser works fine.  
+  
+Running the app in Win10 in Chrome browser works fine from the first try.  
+  
 But running it on my android 6.0.1 (Galaxy Note 4) with PhoneGap Developer app did NOT work at at first.  
 I discovered the problem : modern browsers don't allow ajax calls to local files for security reasons.
 And pkg/mem1_bg.wasm is a local file from the perspective of the PhoneGap app.
@@ -20,8 +22,6 @@ This is a temporary solution, but good enought to demostrate how Wasm works with
     wasm_bindgen("https://lucianobestia.github.io/mem1_website/pkg/mem1_bg.wasm");
   </script>
 ```
-I cannot try this on iPhone yet, because Apple does not allow the PhoneGap Developer app. 
-I will give it a try later.
   
 The source code of the original app is here:  
 https://github.com/LucianoBestia/mem1   
@@ -66,6 +66,7 @@ It will open the app in the browser.
 8. Type in the URL that the `phonegap serve` has printed. It is usually something like 192.168.0.14:3000  
 It will open the PhoneGap app. 
 
+
 ## Creating package APK for Android
 9. Open https://build.phonegap.com/apps and Sign Up or Sign In.
 10. I choose open source and paste my github link https://github.com/LucianoBestia/mem1_phonegap and choose master branch.  
@@ -75,6 +76,14 @@ There is also the possibility of sending the code as one ZIP file.
 When Chrome downloads the APK you can then open it. It will ask you for install and standard security questions.  
 Android must have enabled installing from Unknown Sources. It can be enabled just for this install only.
 Find mem1_phonegap in you programs list and run it.
+
+## iPhone iOS 99$ per year
+To build a PhoneGap app for iOS you need the Certificate from the Apple Developer Membership.  
+That costs 99$ per year. No workaround around that.
+Even for just a test or for a development version on one single smartphone.   
+I don't want to pay just to try it once if it actually works.  
+I will simply suppose that it does. PhoneGap promise is that it will work on all smarphones.
+
 
 ## Programming References
 https://phonegap.com/  
