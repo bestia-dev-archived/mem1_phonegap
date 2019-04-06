@@ -77,7 +77,7 @@ It will ask you for install and standard security questions.
 Android must have enabled installing from Unknown Sources. Usually it can be enabled just for this install only.  
 13. On Android find mem1_phonegap in you programs list and run it.  
   
-My build can be found here:  
+My build APK package can be found here:  
 https://build.phonegap.com/apps/3526520/share   
 
 ## iPhone iOS 99$ per year
