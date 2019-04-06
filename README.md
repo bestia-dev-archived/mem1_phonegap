@@ -1,6 +1,6 @@
 Things are changing fast. This is the situation on 2019-04-06.
 # mem1_phonegap
-Trying PhoneGap with Wasm with the game mem1 written in Rust Webassembly with Virtual Dom.
+Trying PhoneGap with Wasm with the game mem1 written in Rust Wasm/Webassembly with Virtual Dom.  
 The source code of the original app is here:  
 https://github.com/LucianoBestia/mem1   
   
