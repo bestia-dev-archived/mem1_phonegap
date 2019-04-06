@@ -93,6 +93,10 @@ There is also the possibility of sending the code as one ZIP file.
 
 The app works the same as with the PhoneGap Development app. It does not start the Wasm code.
 
+2019-04-06
+I think the problem is Browsers don't allow file:// URLs with ajax calls (for security reasons).
+And wasm is loaded as ajax call. So I have to put a static file server inside Cordova. Let's try.
+
 ## Programming References
 https://phonegap.com/  
 https://www.formget.com/phonegap-build/  
