@@ -59,7 +59,7 @@ This will also download and prepare all it needs in the platforms, plugin and mo
 ## Running on Win10 - in the browser
 6. Open the browser with the URL that the `phonegap serve` has printed. It is usually something like 192.168.0.14:3000 
 It will open the app in the browser.  
-![snap01](https://user-images.githubusercontent.com/31509965/55613230-61ea8500-57b4-11e9-99b7-36125b15c520.JPG)
+![snap01](https://user-images.githubusercontent.com/31509965/55587238-181e8200-5755-11e9-88eb-f8fb62be581e.png)
 
 ## Running on Android - PhoneGap Development app
 7. Start the PhoneGap Developer app  
