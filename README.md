@@ -72,7 +72,8 @@ It will open the PhoneGap app.
 There is also the possibility for sending the code as one single ZIP file.  
 11. I clicked "Ready to build" or "Rebuild". If the code is changed in Github, there is a button "Update Code".
 12. In the right upper corner there is a QR code to downloadi the APK to the android device.  
-When Chrome for Android downloads the APK you can then open it. It will ask you for install and standard security questions.  
+When Chrome for Android downloads the APK you can then open it.  
+It will ask you for install and standard security questions.  
 Android must have enabled installing from Unknown Sources. Usually it can be enabled just for this install only.  
 13. On Android find mem1_phonegap in you programs list and run it.  
   
