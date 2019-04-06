@@ -10,13 +10,17 @@
 </head>
 
 <body>
-  <h1>first line</h1>
-  <h2>second line</h2>
+
   <script src="pkg/mem1.js"></script>
   <script>
-    wasm_bindgen("pkg/mem1_bg.wasm");
+    //Browsers don't allow Ajax call to local files for security reasons. 
+    //Obviously Cordova works with local files by default.
+    //So I use my wasm file on the internet over the http protocol.
+    //Another solution would be to use cordova-plugin-httpd, but I found 
+    //it too complicated for this simple example.
+    //wasm_bindgen("pkg/mem1_bg.wasm");
+    wasm_bindgen("https://lucianobestia.github.io/mem1_website/pkg/mem1_bg.wasm");
   </script>
-  <h2>third line</h2>
 </body>
 
 </html>
