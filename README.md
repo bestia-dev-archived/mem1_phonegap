@@ -1,13 +1,18 @@
 Things are changing fast. This is the situation on 2019-04-06.
 # mem1_phonegap
-Trying PhoneGap with Wasm with the game mem1 written in Rust Webassembly with Virtual Dom.  
+Trying PhoneGap with Wasm with the game mem1 written in Rust Wasm/Webassembly with Dodrio Virtual Dom.  
+The source code of the original app is here:  
+https://github.com/LucianoBestia/mem1   
+  
 PhoneGap is just a distribution of Cordova. It has the exact same "engine". Just the tooling is somehow different.  
 On Win10 the development version is served from PhoneGap CLI with `phonegap serve`.  
-Running the app in Win10 in Chrome browser works fine.  
-But running it on my android 6.0.1 (Galaxy Note 4) with PhoneGap Developer app did NOT work at at first.  
-I discovered the problem : modern browsers don't allow ajax calls to local files for security reasons.
-And pkg/mem1_bg.wasm is a local file from the perspective of the PhoneGap app.
-Therefor I changed the URL of the wasm file to be served over http:// from my github page and now it works fine.
+  
+Running the app in Win10 in Chrome browser works fine from the first try.  
+  
+But running it on my android 6.0.1 (Galaxy Note 4) with PhoneGap Developer app did NOT work at first.  
+I discovered the problem : modern browsers don't allow ajax calls to local files for security reasons.  
+And pkg/mem1_bg.wasm is a local file from the perspective of the PhoneGap app.  
+Therefor I changed the URL of the wasm file to be served over http:// from my github page and now it works fine.  
 This is a temporary solution, but good enought to demostrate how Wasm works with PhoneGap/Cordova.
 ```javascript
 <script>
@@ -20,12 +25,7 @@ This is a temporary solution, but good enought to demostrate how Wasm works with
     wasm_bindgen("https://lucianobestia.github.io/mem1_website/pkg/mem1_bg.wasm");
   </script>
 ```
-I cannot try this on iPhone yet, because Apple does not allow the PhoneGap Developer app. 
-I will give it a try later.
   
-The source code of the original app is here:  
-https://github.com/LucianoBestia/mem1   
-
 ## How to install phonegap for development
 Requirements : npm must be installed on Win10. It comes with the installation of nodejs at https://nodejs.org.
 It installs also the "node.js command prompt". You can find it in Start.  
@@ -54,7 +54,7 @@ Run inside the project folder:
 ```
 phonegap serve
 ```
-This will also download and prepare all it needs in the platforms, plugin and modules folders.
+This will also download and prepare all it needs in the /platforms, /plugin and /modules folders.
 
 ## Running on Win10 - in the browser
 6. Open the browser with the URL that the `phonegap serve` has printed. It is usually something like 192.168.0.14:3000 
@@ -68,12 +68,25 @@ It will open the PhoneGap app.
 
 ## Creating package APK for Android
 9. Open https://build.phonegap.com/apps and Sign Up or Sign In.
-10. I choose open source and paste my github link https://github.com/LucianoBestia/mem1_phonegap and choose master branch.  
-There is also the possibility of sending the code as one ZIP file.  
-11. I clicked "Ready to build" or Rebuild. If the code is changed in Github, there is a button Update Code.
+10. I choose "open source" and paste my github link https://github.com/LucianoBestia/mem1_phonegap.  
+There is also the possibility for sending the code as one single ZIP file.  
+11. I clicked "Ready to build" or "Rebuild". If the code is changed in Github, there is a button "Update Code".
 12. In the right upper corner there is a QR code to downloadi the APK to the android device.  
-When Chrome downloads the APK you can then open it. It will ask you for install and standard security questions.  
-Android must have enabled installing from Unknown Sources. It can be enabled just for this install only.
+When Chrome for Android downloads the APK you can then open it.  
+It will ask you for install and standard security questions.  
+Android must have enabled installing from Unknown Sources. Usually it can be enabled just for this install only.  
+13. On Android find mem1_phonegap in you programs list and run it.  
+  
+My build APK package can be found here:  
+https://build.phonegap.com/apps/3526520/share   
+
+## iPhone iOS 99$ per year
+To build a PhoneGap app for iOS you need the Certificate from the Apple Developer Membership.  
+That costs 99$ per year. No workaround around that.  
+Even for just a test or for a development version on one single smartphone.   
+I don't want to pay just to try it once if it actually works.  
+I will simply suppose that it does.   
+PhoneGap is promising that it will work on all smarphones.
 
 ## Programming References
 https://phonegap.com/  
