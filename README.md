@@ -1,6 +1,6 @@
 Things are changing fast. This is the situation on 2019-04-06.
 # mem1_phonegap
-Trying PhoneGap with Wasm with the game mem1 written in Rust Wasm/Webassembly with Dodrio Virtual Dom.  
+Trying PhoneGap with Wasm with the game mem1 written in Rust Wasm/WebAssembly with Dodrio Virtual Dom.  
 The source code of the original app is here:  
 https://github.com/LucianoBestia/mem1   
   
@@ -12,8 +12,8 @@ Running the app in Win10 in Chrome browser works fine from the first try.
 But running it on my android 6.0.1 (Galaxy Note 4) with PhoneGap Developer app did NOT work at first.  
 I discovered the problem : modern browsers don't allow ajax calls to local files for security reasons.  
 And pkg/mem1_bg.wasm is a local file from the perspective of the PhoneGap app.  
-Therefor I changed the URL of the wasm file to be served over http:// from my github page and now it works fine.  
-This is a temporary solution, but good enought to demostrate how Wasm works with PhoneGap/Cordova.
+Therefor I changed the URL of the wasm file to be served over http:// from my GitHub page and now it works fine.  
+This is a temporary solution, but good enough to demonstrate how Wasm works with PhoneGap/Cordova.
 ```javascript
 <script>
     //Browsers don't allow Ajax call to local files for security reasons. 
@@ -27,7 +27,7 @@ This is a temporary solution, but good enought to demostrate how Wasm works with
 ```
   
 ## How to install phonegap for development
-Requirements : npm must be installed on Win10. It comes with the installation of nodejs at https://nodejs.org.
+Requirements : npm must be installed on Win10. It comes with the installation of NodeJS at https://nodejs.org.
 It installs also the "node.js command prompt". You can find it in Start.  
 1. Win10 : in the "node.js command prompt" run
 ```
@@ -49,7 +49,7 @@ Inside the www folder I added the folders: www/pkg and www/content
 and the files www/index.html and www/css/mem1.css.  
 
 ## Running on Win10 - development server
-5. Start the development server: in "node-js command promt".  
+5. Start the development server: in "node-js command prompt".  
 Run inside the project folder:
 ```
 phonegap serve
@@ -68,10 +68,10 @@ It will open the PhoneGap app.
 
 ## Creating package APK for Android
 9. Open https://build.phonegap.com/apps and Sign Up or Sign In.
-10. I choose "open source" and paste my github link https://github.com/LucianoBestia/mem1_phonegap.  
+10. I choose "open source" and paste my GitHub link https://github.com/LucianoBestia/mem1_phonegap.  
 There is also the possibility for sending the code as one single ZIP file.  
-11. I clicked "Ready to build" or "Rebuild". If the code is changed in Github, there is a button "Update Code".
-12. In the right upper corner there is a QR code to downloadi the APK to the android device.  
+11. I clicked "Ready to build" or "Rebuild". If the code is changed in GitHub, there is a button "Update Code".
+12. In the right upper corner there is a QR code to download the APK to the android device.  
 When Chrome for Android downloads the APK you can then open it.  
 It will ask you for install and standard security questions.  
 Android must have enabled installing from Unknown Sources. Usually it can be enabled just for this install only.  
@@ -86,7 +86,7 @@ That costs 99$ per year. No workaround around that.
 Even for just a test or for a development version on one single smartphone.   
 I don't want to pay just to try it once if it actually works.  
 I will simply suppose that it does.   
-PhoneGap is promising that it will work on all smarphones.
+PhoneGap is promising that it will work on all smartphones.
 
 ## Programming References
 https://phonegap.com/  
