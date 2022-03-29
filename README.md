@@ -1,11 +1,11 @@
 # mem1_phonegap
 
 **Trying PhoneGap with Wasm with the game mem1**  
-***version: 2.0  date: 2019-04-06 author: [Dev_Bestia](https://bestia.dev) repository: [GitHub](https://github.com/LucianoBestia/mem1_phonegap)***  
+***version: 2.0  date: 2019-04-06 author: [bestia.dev](https://bestia.dev) repository: [GitHub](https://github.com/bestia-dev/mem1_phonegap)***  
 
 All written in Rust Wasm/WebAssembly with Dodrio Virtual Dom.  
 The source code of the original app is here:  
-<https://github.com/LucianoBestia/mem1>  
+<https://github.com/bestia-dev/mem1>  
   
 PhoneGap is just a distribution of Cordova. It has the exact same "engine". Just the tooling is somehow different.  
 On Win10 the development version is served from PhoneGap CLI with `phonegap serve`.  
@@ -26,7 +26,7 @@ This is a temporary solution, but good enough to demonstrate how Wasm works with
     //Another solution would be to use cordova-plugin-httpd, but I found 
     //it too complicated for this simple example.
     //wasm_bindgen("pkg/mem1_bg.wasm");
-    wasm_bindgen("https://lucianobestia.github.io/mem1_website/pkg/mem1_bg.wasm");
+    wasm_bindgen("https://bestia-dev.github.io/mem1_website/pkg/mem1_bg.wasm");
   </script>
 ```
   
@@ -48,7 +48,7 @@ npm install -g phonegap@latest
 3\. Clone this repository. It will create a new folder.
 
 ```bash
-git clone https://github.com/LucianoBestia/mem1_phonegap
+git clone https://github.com/bestia-dev/mem1_phonegap
 ```
 
 4\. Move to that folder
@@ -87,7 +87,7 @@ It will open the PhoneGap app.
 ## Creating package APK for Android
 
 9\. Open <https://build.phonegap.com/apps> and Sign Up or Sign In.
-10\. I choose "open source" and paste my GitHub link <https://github.com/LucianoBestia/mem1_phonegap>.  
+10\. I choose "open source" and paste my GitHub link <https://github.com/bestia-dev/mem1_phonegap>.  
 There is also the possibility for sending the code as one single ZIP file.  
 11\. I clicked "Ready to build" or "Rebuild". If the code is changed in GitHub, there is a button "Update Code".
 12\. In the right upper corner there is a QR code to download the APK to the android device.  

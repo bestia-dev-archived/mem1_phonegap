@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.github.LucianoBestia" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.github.bestia-dev" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>mem1_phonegap</name>
     <description>
         Trying phonegap with Wasm with the game mem1 written in Rust Webassembly with Virtual Dom. 
     </description>
-    <author email="suplucianobestia@gmail.com" href="https://github.com/LucianoBestia/mem1_phonegap">
+    <author email="supinfo@bestia.dev" href="https://github.com/bestia-dev/mem1_phonegap">
         PhoneGap Team
     </author>
     <content src="index.html" />
