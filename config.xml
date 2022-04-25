@@ -4,7 +4,7 @@
     <description>
         Trying phonegap with Wasm with the game mem1 written in Rust Webassembly with Virtual Dom. 
     </description>
-    <author email="supinfo@bestia.dev" href="https://github.com/bestia-dev/mem1_phonegap">
+    <author email="bestia.dev" href="https://github.com/bestia-dev/mem1_phonegap">
         PhoneGap Team
     </author>
     <content src="index.html" />
