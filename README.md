@@ -3,7 +3,7 @@
 **Trying PhoneGap with Wasm with the game mem1**  
 ***version: 2.0  date: 2019-04-06 author: [bestia.dev](https://bestia.dev) repository: [GitHub](https://github.com/bestia-dev/mem1_phonegap)***  
 
-![Hits](https://bestia.dev/webpage_hit_counter/get_svg_image/741924057)
+![Hits](https://bestia.dev/webpage_hit_counter/get_svg_image/741924057.svg)
 
 Hashtags: #rustlang #game #tutorial  
 My projects on Github are more like a tutorial than a finished product: [bestia-dev tutorials](https://github.com/bestia-dev/tutorials_rust_wasm).
