@@ -3,7 +3,8 @@
 **Trying PhoneGap with Wasm with the game mem1**  
 ***version: 2.0  date: 2019-04-06 author: [bestia.dev](https://bestia.dev) repository: [GitHub](https://github.com/bestia-dev/mem1_phonegap)***  
 
-![status](https://img.shields.io/badge/obsolete-yellow) 
+![status](https://img.shields.io/badge/obsolete-red) 
+![status](https://img.shields.io/badge/archived-red) 
 ![status](https://img.shields.io/badge/tutorial-yellow) 
 ![Hits](https://bestia.dev/webpage_hit_counter/get_svg_image/741924057.svg)
 
